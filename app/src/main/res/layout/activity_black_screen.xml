@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backscreen">
+
+    <TextView
+            android:id="@+id/blacklist"
+            android:layout_width="95.64dp"
+            android:layout_height="33.6dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="117dp"
+            android:layout_marginBottom="80dp"
+            android:gravity="top"
+            android:text="@string/blacklist"
+            android:textAppearance="@style/blacklist"
+            app:layout_constraintBottom_toTopOf="@+id/blocked_apps"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.202"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+            android:id="@+id/blocked_apps"
+            android:layout_width="280dp"
+            android:layout_height="44dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="65dp"
+            android:layout_marginTop="187dp"
+            android:layout_marginEnd="65dp"
+            android:layout_marginBottom="500dp"
+            android:background="#00000000"
+            android:text="@string/blocked_app"
+            android:textAppearance="@style/blocked_apps"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+            android:id="@+id/add_apps"
+            android:layout_width="280dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="272dp"
+            android:layout_alignParentTop="true"
+            android:background="#00000000"
+            android:text="@string/add_apps"
+            android:textAppearance="@style/add_apps"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/blocked_apps"
+            app:layout_constraintVertical_bias="0.0" />
+
+    
+
+</android.support.constraint.ConstraintLayout>
