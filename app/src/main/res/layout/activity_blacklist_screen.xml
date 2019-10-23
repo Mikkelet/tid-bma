@@ -45,13 +45,12 @@
     <!-- Add apps to be blocked -->
     <android.support.v7.widget.RecyclerView
             android:id="@+id/list_of_blocked_apps"
-            android:layout_width="280dp"
-            android:layout_height="100dp"
-            app:layout_constraintBottom_toTopOf="@+id/add_apps"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="282dp"
+            android:layout_height="106dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="32dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/blocked_apps"
-            app:layout_constraintVertical_bias="0.16000003" />
+            app:layout_constraintTop_toBottomOf="@+id/blocked_apps" />
 
     <Button
             android:id="@+id/add_apps"
@@ -69,6 +68,15 @@
             app:layout_constraintTop_toBottomOf="@+id/blocked_apps"
             app:layout_constraintVertical_bias="0.0" />
 
+    <!-- Add apps to be blocked -->
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/list_of_apps"
+            android:layout_width="280dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_apps" />
 
 
     <!-- Start Session_bar -->
