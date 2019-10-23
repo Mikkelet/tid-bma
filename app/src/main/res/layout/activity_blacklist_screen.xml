@@ -22,6 +22,7 @@
             app:layout_constraintHorizontal_bias="0.202"
             app:layout_constraintStart_toStartOf="parent" />
 
+    <!-- Currently blocked apps -->
     <Button
             android:id="@+id/blocked_apps"
             android:layout_width="280dp"
@@ -39,7 +40,16 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- Start Session -->
+    <!-- Add apps to be blocked -->
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/list_of_blocked_apps"
+            android:layout_width="280dp"
+            android:layout_height="100dp"
+            app:layout_constraintBottom_toTopOf="@+id/add_apps"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/blocked_apps"
+            app:layout_constraintVertical_bias="0.16000003" />
 
     <Button
             android:id="@+id/add_apps"
@@ -57,21 +67,23 @@
             app:layout_constraintTop_toBottomOf="@+id/blocked_apps"
             app:layout_constraintVertical_bias="0.0" />
 
+
+
+    <!-- Start Session_bar -->
     <TextView
-            android:id="@+id/start_sessi"
+            android:id="@+id/start_session_bar"
             android:layout_width="80.13dp"
             android:layout_height="17.06dp"
             android:layout_alignParentTop="true"
             android:layout_marginStart="44dp"
             android:layout_marginBottom="28dp"
             android:gravity="top"
-            android:text="@string/start_sessi"
-            android:textAppearance="@style/start_sessi"
+            android:text="@string/start_session_bar"
+            android:textAppearance="@style/start_session_bar"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
     <!-- Timer_bar -->
-
     <TextView
             android:id="@+id/timer_bar"
             android:layout_width="47.56dp"
@@ -87,7 +99,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/blacklist_bar"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/start_sessi" />
+            app:layout_constraintStart_toEndOf="@+id/start_session_bar" />
 
     <!-- Blacklist_bar -->
     <TextView
