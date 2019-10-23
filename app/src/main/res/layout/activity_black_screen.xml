@@ -39,21 +39,68 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+    <!-- Start Session -->
+
     <Button
             android:id="@+id/add_apps"
             android:layout_width="280dp"
             android:layout_height="44dp"
-            android:layout_marginTop="272dp"
             android:layout_alignParentTop="true"
+            android:layout_marginTop="225dp"
             android:background="#00000000"
             android:text="@string/add_apps"
             android:textAppearance="@style/add_apps"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/timer_bar"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/blocked_apps"
             app:layout_constraintVertical_bias="0.0" />
 
-    
+    <TextView
+            android:id="@+id/start_sessi"
+            android:layout_width="80.13dp"
+            android:layout_height="17.06dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="44dp"
+            android:layout_marginBottom="28dp"
+            android:gravity="top"
+            android:text="@string/start_sessi"
+            android:textAppearance="@style/start_sessi"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Timer_bar -->
+
+    <TextView
+            android:id="@+id/timer_bar"
+            android:layout_width="47.56dp"
+            android:layout_height="17.06dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="64dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginBottom="28dp"
+            android:gravity="top"
+            android:text="@string/timer_bar"
+            android:textAppearance="@style/timer_bar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/blacklist_bar"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/start_sessi" />
+
+    <!-- Blacklist_bar -->
+    <TextView
+            android:id="@+id/blacklist_bar"
+            android:layout_width="62dp"
+            android:layout_height="17dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="44dp"
+            android:layout_marginBottom="28dp"
+            android:gravity="top"
+            android:text="@string/blacklist_bar"
+            android:textAppearance="@style/blacklist_bar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

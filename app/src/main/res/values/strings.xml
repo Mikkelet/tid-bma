@@ -3,4 +3,7 @@
     <string name="blacklist">Blacklist</string>
     <string name="add_apps">Add Apps</string>
     <string name="blocked_app">Blocked Apps</string>
+    <string name="start_sessi">Start Session</string>
+    <string name="timer_bar">Timer</string>
+    <string name="blacklist_bar">Blacklist</string>
 </resources>
