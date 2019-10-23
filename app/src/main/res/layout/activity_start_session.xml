@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backscreen">
+
+
+    <!-- Start Session header -->
+    <TextView
+            android:id="@+id/start_sessi"
+            android:layout_width="150.44dp"
+            android:layout_height="33.6dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="72dp"
+            android:gravity="top"
+            android:text="@string/start_sessi"
+            android:textAppearance="@style/start_sessi"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Exercise provider -->
+    <TextView
+            android:id="@+id/exercise_pr"
+            android:layout_width="267dp"
+            android:layout_height="57dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:lineSpacingExtra="0sp"
+            android:text="@string/exercise_pr"
+            android:textAppearance="@style/exercise_pr"
+            app:layout_constraintBottom_toTopOf="@+id/oval_outer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/start_sessi"
+            app:layout_constraintVertical_bias="0.234" />
+
+
+    <!-- Oval outer -->
+    <View
+            android:id="@+id/oval_outer"
+            android:layout_width="183.01dp"
+            android:layout_height="183.01dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="108dp"
+            android:alpha="0.5"
+            android:background="@drawable/oval_outer"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

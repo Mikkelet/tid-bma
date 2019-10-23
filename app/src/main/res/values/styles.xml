@@ -42,5 +42,17 @@
         </item>
 
     </style>
+    <style name="exercise_pr">
+
+        <item name="android:textSize">
+            16sp
+        </item>
+
+        <item name="android:textColor">
+            #FFFFFF
+        </item>
+
+    </style>
+
 
 </resources>
