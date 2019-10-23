@@ -7,7 +7,6 @@
         android:layout_height="match_parent"
         android:background="@drawable/backscreen">
 
-    <!-- Currently blocked apps -->
     <TextView
             android:id="@+id/blacklist"
             android:layout_width="95.64dp"
@@ -21,26 +20,26 @@
             app:layout_constraintBottom_toTopOf="@+id/blocked_apps"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.202"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0" />
+            app:layout_constraintStart_toStartOf="parent" />
 
+
+    <!-- Currently blocked apps -->
     <Button
             android:id="@+id/blocked_apps"
             android:layout_width="280dp"
             android:layout_height="44dp"
             android:layout_alignParentTop="true"
             android:layout_marginStart="65dp"
-            android:layout_marginTop="187dp"
+            android:layout_marginTop="260dp"
             android:layout_marginEnd="65dp"
-            android:layout_marginBottom="500dp"
             android:background="#00000000"
             android:text="@string/blocked_app"
             android:textAppearance="@style/blocked_apps"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
 
     <!-- Add apps to be blocked -->
     <android.support.v7.widget.RecyclerView
@@ -51,32 +50,6 @@
             android:layout_marginTop="32dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/blocked_apps" />
-
-    <Button
-            android:id="@+id/add_apps"
-            android:layout_width="280dp"
-            android:layout_height="44dp"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="225dp"
-            android:background="#00000000"
-            android:text="@string/add_apps"
-            android:textAppearance="@style/add_apps"
-            app:layout_constraintBottom_toTopOf="@+id/timer_bar"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.503"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/blocked_apps"
-            app:layout_constraintVertical_bias="0.0" />
-
-    <!-- Add apps to be blocked -->
-    <android.support.v7.widget.RecyclerView
-            android:id="@+id/list_of_apps"
-            android:layout_width="280dp"
-            android:layout_height="100dp"
-            android:layout_marginStart="64dp"
-            android:layout_marginTop="32dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/add_apps" />
 
 
     <!-- Start Session_bar -->
