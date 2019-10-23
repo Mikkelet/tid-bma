@@ -7,6 +7,7 @@
         android:layout_height="match_parent"
         android:background="@drawable/backscreen">
 
+    <!-- Currently blocked apps -->
     <TextView
             android:id="@+id/blacklist"
             android:layout_width="95.64dp"
@@ -20,9 +21,10 @@
             app:layout_constraintBottom_toTopOf="@+id/blocked_apps"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.202"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
 
-    <!-- Currently blocked apps -->
     <Button
             android:id="@+id/blocked_apps"
             android:layout_width="280dp"

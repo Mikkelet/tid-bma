@@ -31,5 +31,16 @@
         <item name="android:textSize">12.41sp</item>
         <item name="android:textColor">#FFFFFF</item>
     </style>
+    <style name="start_sessi">
+
+        <item name="android:textSize">
+            24.81sp
+        </item>
+
+        <item name="android:textColor">
+            #FFFFFF
+        </item>
+
+    </style>
 
 </resources>
